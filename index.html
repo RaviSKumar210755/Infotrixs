@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="MainContainer">
+      <div class="navBar">
+        <div class="Search">
+          <input
+            type="text"
+            placeholder="Enter City Name"
+            class="input"
+            id="locationInput"
+          />
+          <button type="button" class="input" id="searchButton">Search</button>
+        </div>
+      </div>
+      <div class="ContentContainer" style="display: flex">
+        <div class="innerContent">
+          <div class="MainContent">
+            <div class="img">
+              <img src="Main.png" class="imgSrc" id="imgIcon" />
+            </div>
+            <div class="Temperature" id="temperature"></div>
+            <div class="descp" id="description"></div>
+            <div class="Name" id="location"></div>
+          </div>
+          <div class="ExtraContent">
+            <div class="one Same">
+              <div class="UpperContainer">
+                <div class="ExtraimgCont">
+                  <img src="pressure.png" class="ExtraImg1" />
+                </div>
+                <div class="PressureInfo">
+                  <div id="PressureData" class="data1">0</div>
+                  <div class="PressureUnit">hPa</div>
+                </div>
+              </div>
+
+              <div id="PressureName" class="LowerContainer1">Pressure</div>
+            </div>
+            <div class="Two Same">
+              <div class="UpperContainer">
+                <div class="ExtraimgCont">
+                  <img src="pngwing.com.png" class="ExtraImg1" />
+                </div>
+                <div class="PressureInfo">
+                  <div class="data1" id="WindSpeed">0</div>
+                  <div class="PressureUnit">m/s</div>
+                </div>
+              </div>
+              <div class="LowerContainer1">WindSpeed</div>
+            </div>
+            <div class="Three Same">
+              <div class="UpperContainer">
+                <div class="ExtraimgCont">
+                  <img src="pngegg (1).png" class="ExtraImg1" />
+                </div>
+                <div class="PressureInfo">
+                  <div class="data1" id="HumidityData">0</div>
+                  <div class="PressureUnit">%</div>
+                </div>
+              </div>
+              <div class="LowerContainer1">Humidity</div>
+            </div>
+            <div class="Four Same">
+              <div class="UpperContainer">
+                <div class="ExtraimgCont">
+                  <img src="visibility.png" class="ExtraImg1" />
+                </div>
+                <div class="PressureInfo">
+                  <div class="data1" id="VisibilityData">0</div>
+                  <div class="PressureUnit">Km</div>
+                </div>
+              </div>
+              <div class="LowerContainer1">Visibility</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="error-container" style="display: none">
+      <p>Oops! Weather data not found. Please try again.</p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:sans-serif,Impact, Haettenschweiler, 'Arial Narrow Bold'
+    
+}
+.navBar{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+    margin-top: 2.5%;
+}
+
+.input{
+    font-size: 2rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 70%;
+}
+.input {
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none; 
+    width: auto;
+  }
+  #searchButton {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+  }
+  ::placeholder {
+    color: #aaa;
+  }
+  .input:focus {
+    border-color: #3498db;
+  }
+  
+.ContentContainer{
+    margin-top: 20px;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+}
+.innerContent{
+    background: #3498db;
+    background: linear-gradient(to bottom, #3498db, #ffffff);
+    width: 75%;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+}
+.MainContent{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ExtraContent{
+    width: 50%;
+    padding: 5%;
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.imgSrc{
+    width: 250px;
+    height: 250px;
+}
+.Temperature{
+    font-size: 4rem;
+}
+.Name{
+    font-size: 3rem;
+}
+.descp{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+.Same{
+    width: 45%;
+    height: 45%;
+    border: 1px solid rgb(150, 202, 248);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.Same:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+  }
+.UpperContainer{
+    height: 75%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ExtraimgCont{
+    width: 45%;
+    height: 45%;
+}
+.ExtraImg1{
+    width: 80%;
+    height: 80%;
+}
+.data1{
+    font-size: 2.5em;
+    width: 45%;
+    height: 45%;
+}
+.LowerContainer1{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20%;
+}
+
+.Search{
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 40%;
+    border: 1px solid rgb(11, 11, 11);
+    border-radius: 40px;
+    padding: 5px;
+    background-color: rgb(133, 221, 251);
+} 
+.PressureUnit{
+    text-align: center;
+}
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; 
+  background-color: #ffcccc; 
+  color: #ff0000; 
+  font-size: 1.2em; 
+  border: 1px solid #ff0000;
+  border-radius: 10px;
+  margin: 5%;
+}
